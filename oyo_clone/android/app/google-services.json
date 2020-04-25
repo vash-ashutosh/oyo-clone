@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "874829243561",
+    "firebase_url": "https://oyo-major.firebaseio.com",
+    "project_id": "oyo-major",
+    "storage_bucket": "oyo-major.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874829243561:android:c1deabb62afc5729f7b5b8",
+        "android_client_info": {
+          "package_name": "com.dassani.oyo_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874829243561-135rfdqg4135vtaai4jl46br3ii6jjnd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dassani.oyo_clone",
+            "certificate_hash": "0d3c068db20911f30f161f675412fbcd34ab2ca0"
+          }
+        },
+        {
+          "client_id": "874829243561-pe5ijh0dgl56bbsj2eakc8j7so2psphh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ8LQBhean0tjFClfmhqIT9q2YmZ8RCxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874829243561-pe5ijh0dgl56bbsj2eakc8j7so2psphh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
