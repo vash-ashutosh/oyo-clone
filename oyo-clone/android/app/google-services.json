@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "674762328713",
+    "firebase_url": "https://oyo-9583a.firebaseio.com",
+    "project_id": "oyo-9583a",
+    "storage_bucket": "oyo-9583a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674762328713:android:53ff4f48f979a7f167d458",
+        "android_client_info": {
+          "package_name": "com.dassani.reflectly_flutter_loginpage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "674762328713-m59mb2tfa5rk17ig166ii2ghpji8t3rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dassani.reflectly_flutter_loginpage",
+            "certificate_hash": "0d3c068db20911f30f161f675412fbcd34ab2ca0"
+          }
+        },
+        {
+          "client_id": "674762328713-ct8sa8cohdgb7r1n066e5lu5rorsvusp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDldY4ljzU3aAzHg8l5TL263puZjKD-nLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674762328713-ct8sa8cohdgb7r1n066e5lu5rorsvusp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
