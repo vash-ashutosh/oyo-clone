@@ -9,8 +9,8 @@ import 'package:oyoui_app/model/yourwalletslist.dart';
 
 class Constants{
 
-  static final String AEO_UI = 'OYO_UI';
-  static final String SPLASH_SCREEN = 'SPLASH_SCREEN';
+  static final String aeoUi = 'OYO_UI';
+  static final String splashScreen = 'SPLASH_SCREEN';
   static final String login= 'Login';
 
   static List<AreaLocationList> getLocationList() {

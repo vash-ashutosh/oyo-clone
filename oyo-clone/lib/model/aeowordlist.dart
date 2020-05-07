@@ -1,10 +1,10 @@
-class oyoWordList{
+class OyoWordList{
 
   String _imageUrl;
   String _title;
   String _subtitle;
 
-  oyoWordList(this._imageUrl,this._title,this._subtitle);
+  OyoWordList(this._imageUrl,this._title,this._subtitle);
 
   String get imageUrl=> _imageUrl;
   String get title=>_title;

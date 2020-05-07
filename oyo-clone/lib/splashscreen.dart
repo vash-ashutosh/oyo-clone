@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:oyoui_app/constant/constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:oyoui_app/main.dart';
 
 class AnimatedSplashScreen extends StatefulWidget {
   @override
@@ -22,7 +21,7 @@ class SplashScreenState extends State<AnimatedSplashScreen>
   }
 
   void navigationPage() {
-    Navigator.of(context).pushReplacementNamed(Constants.AEO_UI);
+    Navigator.of(context).pushReplacementNamed(Constants.aeoUi);
   }
 
   @override

@@ -12,21 +12,16 @@ import 'package:oyoui_app/model/yourwalletslist.dart';
 import 'package:oyoui_app/widgets/customshape.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class AeoUI extends StatefulWidget {
   @override
   _AeoUIState createState() => _AeoUIState();
 }
 
-double oyo_money=0.0;
-double oyo_rupee=0.0;
+double oyoMoney=0.0;
+double oyoRupee=0.0;
 
 class _AeoUIState extends State<AeoUI> {
-
-  final FirebaseUser user;
-  _AeoUIState(this.user);
-  
 
   double _width;
   double _height;
@@ -36,7 +31,7 @@ class _AeoUIState extends State<AeoUI> {
   List<LimitedPeriodOfferList> limitedPeriodOffer;
   List<ExploreOyoHotelsList> exploreOyoHotels;
   List<WeekendGetawaysList> weekendGetaways;
-  List<oyoWordList> oyoWord;
+  List<OyoWordList> oyoWord;
   List<OyoSpecialsList> oyoSpecials;
   List<LatestOyoList> latestOyo;
   List<YourWalletList> yourWallets;
@@ -54,7 +49,7 @@ class _AeoUIState extends State<AeoUI> {
     yourWallets = Constants.getYourWallet();
   }
   bool checkboxstate=false;
-  void WhatsApp(){
+  void whatsApp(){
     if(checkboxstate){
       print('Checked');
       setState(() {
@@ -72,8 +67,8 @@ class _AeoUIState extends State<AeoUI> {
   @override
   Widget build(BuildContext context) {
     setState(() {
-      oyo_money=0.0;
-      oyo_rupee=0.0;
+      oyoMoney=0.0;
+      oyoRupee=0.0;
     });
     return Scaffold(
       drawer: Drawer(
@@ -138,7 +133,7 @@ class _AeoUIState extends State<AeoUI> {
                   ),),
                ),
                 SizedBox(width: 160,),
-                Text('$oyo_money'),
+                Text('$oyoMoney'),
              ],
            ),
            SizedBox(
@@ -157,7 +152,7 @@ class _AeoUIState extends State<AeoUI> {
                  ),),
                ),
                SizedBox(width: 158,),
-               Text('$oyo_rupee'),
+               Text('$oyoRupee'),
              ],
            ),
            SizedBox(
@@ -239,7 +234,7 @@ class _AeoUIState extends State<AeoUI> {
                  fontWeight: FontWeight.bold,
                ),),
                Checkbox(
-                 onChanged: (bool e)=> WhatsApp(),
+                 onChanged: (bool e)=> whatsApp(),
                  value: checkboxstate,
                ),
              ],
@@ -271,7 +266,7 @@ class _AeoUIState extends State<AeoUI> {
                   margin: EdgeInsets.only(right: 15),
                   child:GestureDetector(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> selectCity()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> SelectCity()));
                     },
                     child: Icon(Icons.notifications_active)),
               ),
@@ -745,7 +740,7 @@ class _AeoUIState extends State<AeoUI> {
                   GestureDetector(
                     onTap: (){
                       print('help');
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => help()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Help()));
                     },
                     child: Icon(Icons.help_outline)),
                     Text('help'),
@@ -1104,12 +1099,12 @@ class _AeoUIState extends State<AeoUI> {
   }
 }
 
-class notification extends StatefulWidget {
+class Notification extends StatefulWidget {
   @override
-  _notificationState createState() => _notificationState();
+  _NotificationState createState() => _NotificationState();
 }
 
-class _notificationState extends State<notification> {
+class _NotificationState extends State<Notification> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -1219,12 +1214,12 @@ class _notificationState extends State<notification> {
   }
 }
 
-class selectCity extends StatefulWidget {
+class SelectCity extends StatefulWidget {
   @override
-  _selectCityState createState() => _selectCityState();
+  _SelectCityState createState() => _SelectCityState();
 }
 
-class _selectCityState extends State<selectCity> {
+class _SelectCityState extends State<SelectCity> {
 
   List<String> cities=["Nanital","Delhi","Agra","Goa","Musoorie","Banglore","Ansh","Ujvl","Nepal","Hydreabad"];
 
@@ -1349,16 +1344,16 @@ class _selectCityState extends State<selectCity> {
                     }
                   }
 
-class help extends StatefulWidget {
-  help({Key key, this.title}) : super(key: key);
+class Help extends StatefulWidget {
+  Help({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _helpState createState() => _helpState();
+  _HelpState createState() => _HelpState();
 }
 
-class _helpState extends State<help> {
+class _HelpState extends State<Help> {
   TextEditingController _controller = new TextEditingController();
   @override
   Widget build(BuildContext context) {
